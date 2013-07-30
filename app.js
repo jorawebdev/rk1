@@ -45,7 +45,7 @@ http.createServer(app).listen(app.get('port'), function(){
 var https = require('https');
 var url = require('url');
 
-https.get('https://runkeeper.com/apps/authorize?client_id=4d0d3daf0f604b85a48336400d76a407&response_type=code&redirect_uri=http://localhost:3000', function(res) {
+https.get('https://runkeeper.com/apps/authorize?client_id=4/'+clientId+'/&response_type=code&redirect_uri=http://localhost:3000', function(res) {
   console.log('STATUS: ' + res.statusCode);
   //console.log('HEADERS: ' + JSON.stringify(res.headers));
   var queryObject = url.parse(res.url,true).query;
