@@ -40,27 +40,7 @@ http.createServer(app).listen(app.get('port'), function(){
 
 
 
-/*
-Client ID:
-4d0d3daf0f604b85a48336400d76a407
-This value is the OAuth 2.0 client ID for your application.
 
-Client Secret:
-b604b5a6e7fa4a7ea1bbebdaee90e2b6
-This value is the OAuth 2.0 shared secret for your application.
-
-Authorization URL:
-https://runkeeper.com/apps/authorize
-This is the URL to which your application should redirect the user in order to authorize access to his or her RunKeeper account.
-https://runkeeper.com/apps/authorize?client_id=4d0d3daf0f604b85a48336400d76a407&response_type=code&redirect_uri=http://localhost:3000
-
-Access Token URL:
-https://runkeeper.com/apps/token
-This is the URL at which your application can convert an authorization code to an access token.
-
-De-Authorization URL:
-https://runkeeper.com/apps/de-authorize
-*/
 
 var https = require('https');
 var url = require('url');
@@ -80,11 +60,11 @@ var options = exports.options = {
 
     // Client ID (Required): 
     // This value is the OAuth 2.0 client ID for your application.  
-    client_id : "4d0d3daf0f604b85a48336400d76a407",
+    client_id : //,
 
     // Client Secret (Required):  
     // This value is the OAuth 2.0 shared secret for your application.   
-    client_secret : "b604b5a6e7fa4a7ea1bbebdaee90e2b6",
+    client_secret : //,
 
     // Authorization URL (Optional, default will work for most apps):
     // This is the URL to which your application should redirect the user in order to authorize access to his or her RunKeeper account.   
